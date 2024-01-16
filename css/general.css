@@ -1,0 +1,164 @@
+/** Typography
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+zz
+
+- Line Height
+Default: 
+Small: 
+Medium: 
+Paragraph-default: 
+
+- Font Weights
+Default:
+Medium: 
+Semi-bold: 
+Bold:
+
+- Letter Spacing
+
+/** Colors
+
+- Primary: 
+
+- Tints: 
+- Shades: 
+- Accent:
+- Greys: 
+
+/** Images
+
+/** Icons
+
+/** Shadows
+
+/** Border Radius
+- Default: 
+Medium: 
+
+/** WhiteSpace
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #555;
+
+  /* Only works if there's nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+*:focus {
+  outline: none;
+  /*! outline: 4px dotted #e67e22; */
+  /*! outline-offset: 8px; */
+  /** We can set the outline just like the border property & can give an offset width. */
+  box-shadow: 0 0 0 0.5rem rgba(230, 126, 34, 0.5);
+}
+/*? Whenever we hit tab in our website, the webpage automatically shifts to the links & buttons in our webpage & makes a coloured outline outside it. */
+/*? This helps increasing our website's accessibility. So that people could see that focused links & buttons. */
+/** So, we set the focus state to none by setting the outline property to none. It is like a global reset for focus. */
+/** It is very bad for website's accessibility, because now we don't know where the where is the link when we press tab. */
+/*? We can make that ugly outline look beautiful by using box-shadow property */
+
+/*! ********************************** */
+/** GENERAL REUSABLE COMPONENTS */
+/*! ********************************** */
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625px = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  /* * Use 1rem = 10px */
+  font-size: 62.5%;
+
+  /*! NOTE: Always set the font-size inside the html selector to 62.5% for any new project as a part of global reset. So that the user's browser font-size setting will be 62.5% * 16px = 10px, which will be easier of us to calculate the rem unit. */
+
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+  /* To smoothen scrolling */
+}
+
+.heading-primary {
+  font-size: 5.8rem;
+  font-family: "Axiforma", sans-serif;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.1;
+  margin-bottom: 4.8rem;
+}
+
+.heading-secondary {
+  font-size: 5.2rem;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500; /* 500 represents the Medium weight */
+  color: #000;
+  line-height: 1.36;
+  margin-bottom: 1.36rem;
+}
+
+/* .remove-mb-gallery {
+  margin-bottom: 0;
+} */
+
+.heading-tertiary {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600; /* Semibold */
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 1);
+}
+
+.heading-quarternary {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgba(253, 91, 47, 1);
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: rgba(253, 91, 47, 1);
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600; /* 600 represents the Semibold weight */
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+}
+
+.svsb-paragraph {
+  font-size: 1.5rem;
+  font-family: "Avenir", sans-serif;
+  font-weight: 500; /* 500 represents the Medium weight */
+  color: #000;
+  line-height: 2.4;
+}
+
+.cta-svsb-btn:link,
+.cta-svsb-btn:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.7rem 2.6rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(253, 91, 47, 1);
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500; /* 500 represents the Medium weight */
+  border-radius: 6px;
+  display: inline-block;
+}

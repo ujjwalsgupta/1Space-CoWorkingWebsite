@@ -1,0 +1,502 @@
+/*! ********************************** */
+/*todo: HEADER */
+/*! ********************************** */
+
+.header {
+  background-color: rgba(255, 255, 255, 100%);
+  /*? Flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 113rem;
+  margin: 0 auto;
+
+  /** We have giving a fixed height to navbar because we want it to be sticky (stick at the top)*/
+  height: 10rem;
+}
+
+.logo:link,
+.logo:visited {
+  font-size: 3rem;
+  font-family: "Cera Pro Medium", Arial, sans-serif;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 100%);
+}
+
+.navbar-list1,
+.navbar-list2 {
+  list-style: none;
+  /*? Flexbox */
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  font-size: 1.6rem;
+  font-family: "Cera Pro Medium", Arial, sans-serif;
+  color: rgba(104, 108, 117, 100%);
+  text-decoration: none;
+}
+
+/*! ********************************** */
+/*todo: SECTION 1: HERO SECTION */
+/*! ********************************** */
+
+.section-hero {
+  background-color: #fff;
+  padding: 0 0 6.4rem 0;
+}
+
+.hero {
+  max-width: 113rem;
+  margin: 0 auto;
+  /*? CSS Grid */
+  display: grid;
+  grid-template-columns: 0.9fr 1.2fr;
+  /* align-items: center; */
+  gap: 3.2rem;
+}
+
+.text-box {
+  position: relative;
+  align-self: center;
+}
+
+.zigzag-vector {
+  margin-bottom: 1.2rem;
+}
+
+/* .img-box {
+  display: grid;
+} */
+
+.hero-img {
+  /* justify-self: end; */
+  width: 110%;
+}
+
+.cta-bar-hero {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9rem;
+  width: 75rem;
+  padding: 0 3.2rem;
+  border-radius: 7px;
+
+  /*? Glassmorphism */
+  background: rgba(243, 243, 243, 0.6);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(12px);
+  /* -webkit-backdrop-filter: blur(13.8px); */
+}
+
+.location-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.cta-text {
+  font-size: 1.6rem;
+  font-family: "Cera Pro", sans-serif;
+  font-weight: 300;
+  color: rgb(133, 133, 133);
+}
+
+.cta-btn-hero {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  padding: 1.4rem 2.6rem;
+  background-color: rgba(253, 91, 47, 1);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cta-customers {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+  position: absolute;
+  margin-top: 11rem;
+}
+
+.cta-delivered-customers-img {
+  display: flex;
+}
+
+.cta-delivered-customers-img img {
+  height: 3.8rem;
+  width: 3.8rem;
+  border-radius: 50%;
+  margin-right: -1.2rem;
+  border: 3px solid #fdf2e9;
+}
+
+.cta-text-booking-related {
+  font-size: 1.2rem;
+  font-family: "Avenir", sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+
+/*! ********************************** */
+/*todo: SECTION 2: SERVICES SECTION */
+/*! ********************************** */
+
+.section-services {
+  background-color: #fff;
+  padding: 0 0 9.6rem 0;
+}
+
+.partner-companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 113rem;
+  margin: 0 auto;
+  gap: 6.4rem;
+  padding: 3.2rem 0;
+  margin-bottom: 6.4rem;
+}
+
+.partner-companies img:nth-child(3) {
+  padding-top: 0.4rem;
+}
+
+.services {
+  max-width: 113rem;
+  margin: 0 auto;
+  /** CSS Grids */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.services-img {
+  width: 90%;
+}
+
+.tour-3d-space-btn:link,
+.tour-3d-space-btn:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500; /* 500 represents the Medium weight */
+  color: rgba(253, 91, 47, 1);
+}
+
+.services-btns {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.service-btn-3d {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 19px 0 0 19px;
+  padding: 0.7rem 0;
+}
+
+.services-para {
+  margin-bottom: 8rem;
+}
+
+/*! ********************************** */
+/*todo: SECTION 3: VISIONS SECTION */
+/*! ********************************** */
+
+.section-visions {
+  background-color: #fff;
+  padding: 0 0 9.6rem 0;
+}
+
+.visions {
+  max-width: 113rem;
+  margin: 0 auto;
+  /* margin: 0 0 0 auto; */
+  /** CSS Grids */
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.visions-features {
+  /** CSS Grids */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2.4rem;
+  column-gap: 3.2rem;
+}
+
+.visions-features-block p {
+  font-size: 1.33rem;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.visions-img {
+  width: 115%;
+}
+
+.visions-features-heading {
+  display: inline-block;
+  font-family: "Gilroy", sans-serif;
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.visions-icon {
+  height: 2.3rem;
+}
+
+.visions-features-block {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.visions-para {
+  margin-bottom: 3.2rem;
+}
+
+.visions-features {
+  margin-bottom: 6.2rem;
+}
+
+/*! ********************************** */
+/*todo: SECTION 4: SOLUTIONS SECTION */
+/*! ********************************** */
+
+.section-solutions {
+  background-color: #fff;
+  padding: 0 0 9.6rem 0;
+}
+
+.solutions {
+  max-width: 113rem;
+  margin: 0 auto;
+  /** CSS Grid */
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+.solutions-img-box img {
+  width: 200%;
+}
+
+.solutions-para {
+  margin-bottom: 8.2rem;
+}
+
+/*! ********************************** */
+/*todo: SECTION 5: SOLUTIONS SECTION */
+/*! ********************************** */
+
+.section-reasons {
+  background-color: #fff;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.reasons-text-box {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reasons-content-box {
+  max-width: 115rem;
+  margin: 0 auto;
+  /** CSS Grid  */
+  display: flex;
+  text-align: center;
+  gap: 3.2rem;
+}
+
+.reasons-content-card p {
+  font-size: 1.25rem;
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 2;
+}
+
+.reasons-mb {
+  margin-bottom: 6.2rem;
+}
+
+.reasons-content-card img {
+  margin-bottom: 3.2rem;
+}
+
+.reasons-content-card .heading-tertiary {
+  margin-bottom: 2rem;
+}
+
+/*! ********************************** */
+/*todo: SECTION 6: GALLERY SECTION */
+/*! ********************************** */
+
+.section-gallery {
+  background-color: #fff;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.gallery-grid {
+  max-width: 113rem;
+  margin: 0 auto;
+  /** CSS Grid */
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  column-gap: 3.2rem;
+}
+
+.gallery-flex-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.gallery-flex-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.gallery-img {
+  width: 115%;
+}
+
+.gallery-text-box {
+  margin-bottom: 4.8rem;
+}
+
+/*! ********************************** */
+/*todo: SECTION 7: BECOME A MEMBER (BAM) SECTION */
+/*! ********************************** */
+
+.section-bam {
+  background-color: #fff;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.grid-bam {
+  max-width: 113rem;
+  margin: 0 auto;
+  /** CSS Grid */
+  display: grid;
+  grid-template-columns: 1fr 0.65fr;
+  align-items: center;
+  justify-content: center;
+  /* gap: 3rem; */
+}
+
+.cta-outline-btn:link,
+.cta-outline-btn:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.7rem 2.6rem;
+  color: rgba(253, 91, 47, 1);
+  background-color: #fff;
+  /* outline: 2px solid rgba(253, 91, 47, 1); */
+  box-shadow: inset 0 0 0 1px rgba(253, 91, 47, 1);
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500; /* 500 represents the Medium weight */
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.btn-box-bam {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+}
+
+.bam-para {
+  margin-bottom: 8.4rem;
+  padding: 0 12.8rem 0 0;
+}
+
+.bam-img-box {
+  justify-self: flex-end;
+}
+
+.bam-img-box img {
+  width: 110%;
+}
+
+/*! ********************************** */
+/*todo: SECTION 8: FOOTER */
+/*! ********************************** */
+
+.footer {
+  background-color: #fff;
+  padding: 4.8rem 0 9.6rem 0;
+  background-image: linear-gradient(
+    rgba(255, 255, 255),
+    rgba(253, 91, 47, 0.1)
+  );
+}
+
+.footer-grid {
+  margin: 0 auto;
+  max-width: 113rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  justify-content: center;
+  column-gap: 8rem;
+}
+
+.logo-footer:link,
+.logo-footer:visited {
+  font-size: 3rem;
+  font-family: "Cera Pro Medium", Arial, sans-serif;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 100%);
+  margin-bottom: 2.2rem;
+  display: inline-block;
+}
+
+.footer-paragraph {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.6rem;
+  color: #000;
+  line-height: 2;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-list li {
+  font-family: "Gilroy", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.6rem;
+  margin-bottom: 2.2rem;
+}
